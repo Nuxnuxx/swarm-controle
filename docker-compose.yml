@@ -2,7 +2,7 @@ version: "3"
 
 services:
   drupal:
-    image: renaudperrai/ctf/general
+    image: renaudperrai/ctf:stage5
     deploy:
       replicas: 5
   bdd:
