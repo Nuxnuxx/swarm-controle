@@ -2,7 +2,7 @@ version: "3"
 
 services:
   drupal:
-    image: https://hub.docker.com/repository/docker/renaudperrai/ctf/general
+    image: renaudperrai/ctf:general
     deploy:
       replicas: 5
   bdd:
