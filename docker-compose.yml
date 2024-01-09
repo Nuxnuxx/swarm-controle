@@ -5,6 +5,8 @@ services:
     image: renaudperrai/ctf:stage5
     deploy:
       replicas: 5
+    ports:
+      - 8080:80
   bdd:
     image: postgres:16
     restart: always
