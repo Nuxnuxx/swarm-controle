@@ -6,15 +6,14 @@ services:
     deploy:
       replicas: 5
     ports:
-      - 8080:80
+      - 80:80
   postgres:
     image: postgres:16
     restart: always
     environment:
       - POSTGRES_PASSWORD=drupalPass
     volumes:
-      - bdd:/var/lib/mysql
-      - ./bdd/pgdata:/var/lib/postgresql
+      - ./bdd/pgdata:/var/lib/postgresql/data
     deploy:
       replicas: 1
       restart_policy:
